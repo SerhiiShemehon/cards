@@ -1,0 +1,235 @@
+.card-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 0 50px;
+  transition: 0.5s;
+  &.mixing{
+    @media (min-width: 1024px){
+      .card-item{
+        &:nth-child(1){
+          z-index: 20;
+          animation: mixing01 2s linear infinite alternate;
+        }
+        &:nth-child(2){
+          z-index: 15;
+          animation: mixing02 2s linear infinite alternate;
+        }
+        &:nth-child(3){
+          animation: mixing03 2s linear infinite alternate;
+        }
+        &:nth-child(4){
+          animation: mixing04 2s linear infinite alternate;
+        }
+        &:nth-child(5){
+          z-index: 10;
+          animation: mixing05 2s linear infinite alternate;
+        }
+        &:nth-child(6){
+          animation: mixing06 2s linear infinite alternate;
+        }
+        &:nth-child(7){
+          animation: mixing07 2s linear infinite alternate;
+        }
+        &:nth-child(8){
+          z-index: 5;
+          animation: mixing08 2s linear infinite alternate;
+        }
+        &:nth-child(9){
+          animation: mixing09 2s linear infinite alternate;
+        }
+        &:nth-child(10){
+          animation: mixing10 2s linear infinite alternate;
+        }
+      }
+    }
+  }
+}
+.card-item{
+  padding: 10px;
+  width: 100%;
+  max-width: 50%;
+  perspective: 600px;
+  @media (min-width: 768px){
+    max-width: 33%;
+  }
+  @media (min-width: 1024px){
+    max-width: 20%;
+  }
+}
+.card-holder{
+  padding-top: 150%;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  &.is-flipped {
+    transform: rotateY(180deg);
+  }
+  &:hover{
+    box-shadow: 0 0 25px 0 #fff;
+  }
+  .card{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-front{
+
+  }
+  .card-back{
+    background-color: #fff;
+    background-size: contain;
+    transform: rotateY( 180deg );
+  }
+}
+
+@keyframes mixing01 {
+  25% {
+    transform: translate(200%, 0);
+  }
+  50% {
+    transform: translate(300%, 100%);
+  }
+  75% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(400%, 0);
+  }
+}
+@keyframes mixing02 {
+  25% {
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    transform: translate(-100%, 0);
+  }
+  75% {
+    transform: translate(200%, 100%);
+  }
+  100% {
+    transform: translate(0, 100%);
+  }
+}
+@keyframes mixing03 {
+  25% {
+    transform: translate(-200%, 0);
+  }
+  50% {
+    transform: translate(-100%, 100%);
+  }
+  75% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(200%, 100%);
+  }
+}
+@keyframes mixing04 {
+  25% {
+    transform: translate(-100%, 100%);
+  }
+  50% {
+    transform: translate(-200%, 0);
+  }
+  75% {
+    transform: translate(-300%, 100%);
+  }
+  100% {
+    transform: translate(-300%, 0);
+  }
+}
+@keyframes mixing05 {
+  25% {
+    transform: translate(-300%, 100%);
+  }
+  50% {
+    transform: translate(0, 100%);
+  }
+  75% {
+    transform: translate(-400%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes mixing06 {
+  25% {
+    transform: translate(100%, -100%);
+  }
+  50% {
+    transform: translate(400%, -100%);
+  }
+  75% {
+    transform: translate(200%, -100%);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+@keyframes mixing07 {
+  25% {
+    transform: translate(200%, 0);
+  }
+  50% {
+    transform: translate(-100%, 0);
+  }
+  75% {
+    transform: translate(300%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes mixing08 {
+  25% {
+    transform: translate(200%, 0);
+  }
+  50% {
+    transform: translate(100%, -100%);
+  }
+  75% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+@keyframes mixing09 {
+  25% {
+    transform: translate(100%, -100%);
+  }
+  50% {
+    transform: translate(-100%, 0);
+  }
+  75% {
+    transform: translate(100%, -100%);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes mixing10 {
+  25% {
+    transform: translate(-100%, -100%);
+  }
+  50% {
+    transform: translate(-200%, -100%);
+  }
+  75% {
+    transform: translate(-200%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

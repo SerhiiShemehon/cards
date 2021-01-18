@@ -1,0 +1,32 @@
+.footer{
+  padding: 10px 0 20px;
+  color: #b4901d;
+  font-size: 30px;
+  .container{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  p{
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    color: #b4901d;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.1);
+    }
+    svg{
+      width: 30px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
