@@ -94,142 +94,112 @@
 }
 
 @keyframes mixing01 {
-  25% {
+  33% {
     transform: translate(200%, 0);
   }
-  50% {
+  66% {
     transform: translate(300%, 100%);
   }
-  75% {
-    transform: translate(100%, 0);
-  }
   100% {
-    transform: translate(400%, 0);
+    transform: translate(100%, 0);
   }
 }
 @keyframes mixing02 {
-  25% {
+  33% {
     transform: translate(-100%, 100%);
   }
-  50% {
+  66% {
     transform: translate(-100%, 0);
   }
-  75% {
-    transform: translate(200%, 100%);
-  }
   100% {
-    transform: translate(0, 100%);
+    transform: translate(200%, 100%);
   }
 }
 @keyframes mixing03 {
-  25% {
+  33% {
     transform: translate(-200%, 0);
   }
-  50% {
+  66% {
     transform: translate(-100%, 100%);
   }
-  75% {
-    transform: translate(100%, 0);
-  }
   100% {
-    transform: translate(200%, 100%);
+    transform: translate(100%, 0);
   }
 }
 @keyframes mixing04 {
-  25% {
+  33% {
     transform: translate(-100%, 100%);
   }
-  50% {
+  66% {
     transform: translate(-200%, 0);
   }
-  75% {
-    transform: translate(-300%, 100%);
-  }
   100% {
-    transform: translate(-300%, 0);
+    transform: translate(-300%, 100%);
   }
 }
 @keyframes mixing05 {
-  25% {
+  33% {
     transform: translate(-300%, 100%);
   }
-  50% {
+  66% {
     transform: translate(0, 100%);
   }
-  75% {
-    transform: translate(-400%, 0);
-  }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-400%, 0);
   }
 }
 @keyframes mixing06 {
-  25% {
+  33% {
     transform: translate(100%, -100%);
   }
-  50% {
+  66% {
     transform: translate(400%, -100%);
   }
-  75% {
-    transform: translate(200%, -100%);
-  }
   100% {
-    transform: translate(100%, -100%);
+    transform: translate(200%, -100%);
   }
 }
 @keyframes mixing07 {
-  25% {
+  33% {
     transform: translate(200%, 0);
   }
-  50% {
+  66% {
     transform: translate(-100%, 0);
-  }
-  75% {
-    transform: translate(300%, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(300%, 0);
   }
 }
 @keyframes mixing08 {
-  25% {
+  33% {
     transform: translate(200%, 0);
   }
-  50% {
+  66% {
     transform: translate(100%, -100%);
   }
-  75% {
-    transform: translate(-100%, 0);
-  }
   100% {
-    transform: translate(0, -100%);
+    transform: translate(-100%, 0);
   }
 }
 @keyframes mixing09 {
-  25% {
+  33% {
     transform: translate(100%, -100%);
   }
-  50% {
+  66% {
     transform: translate(-100%, 0);
-  }
-  75% {
-    transform: translate(100%, -100%);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(100%, -100%);
   }
 }
 @keyframes mixing10 {
-  25% {
+  33% {
     transform: translate(-100%, -100%);
   }
-  50% {
+  66% {
     transform: translate(-200%, -100%);
   }
-  75% {
-    transform: translate(-200%, 0);
-  }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-200%, 0);
   }
 }
