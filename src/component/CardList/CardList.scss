@@ -1,12 +1,51 @@
 .card-list{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 100px 0 50px;
+  padding: 150px 0 50px;
   transition: 0.5s;
+  @media (min-width: 768px){
+    padding: 100px 0 50px;
+  }
   &.mixing{
-    @media (min-width: 1024px){
+    .card-item{
+      &:nth-child(1){
+        z-index: 20;
+        animation: mixing01mob 2s linear infinite alternate;
+      }
+      &:nth-child(2){
+        z-index: 15;
+        animation: mixing02mob 2s linear infinite alternate;
+      }
+      &:nth-child(3){
+        animation: mixing03mob 2s linear infinite alternate;
+      }
+      &:nth-child(4){
+        animation: mixing04mob 2s linear infinite alternate;
+      }
+      &:nth-child(5){
+        z-index: 10;
+        animation: mixing05mob 2s linear infinite alternate;
+      }
+      &:nth-child(6){
+        animation: mixing06mob 2s linear infinite alternate;
+      }
+      &:nth-child(7){
+        animation: mixing07mob 2s linear infinite alternate;
+      }
+      &:nth-child(8){
+        z-index: 5;
+        animation: mixing08mob 2s linear infinite alternate;
+      }
+      &:nth-child(9){
+        animation: mixing09mob 2s linear infinite alternate;
+      }
+      &:nth-child(10){
+        animation: mixing10mob 2s linear infinite alternate;
+      }
+    }
+    @media (min-width: 768px){
       .card-item{
         &:nth-child(1){
           z-index: 20;
@@ -47,15 +86,15 @@
   }
 }
 .card-item{
-  padding: 10px;
+  padding: 4px;
   width: 100%;
-  max-width: 50%;
+  max-width: 25%;
   perspective: 600px;
   @media (min-width: 768px){
-    max-width: 33%;
+    max-width: 20%;
   }
   @media (min-width: 1024px){
-    max-width: 20%;
+    padding: 10px;
   }
 }
 .card-holder{
@@ -90,6 +129,90 @@
     background-color: #fff;
     background-size: contain;
     transform: rotateY( 180deg );
+  }
+}
+
+@keyframes mixing01mob {
+  50% {
+    transform: translate(150%, 100%);
+    z-index: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing02mob {
+  50% {
+    transform: translate(75%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing03mob {
+  50% {
+    transform: translate(-75%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing04mob {
+  50% {
+    transform: translate(-150%, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing05mob {
+  50% {
+    z-index: 0;
+    transform: translate(150%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing06mob {
+  50% {
+    z-index: 20;
+    transform: translate(75%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing07mob {
+  50% {
+    transform: translate(-75%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing08mob {
+  50% {
+    transform: translate(-150%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing09mob {
+  50% {
+    transform: translate(75%, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes mixing10mob {
+  50% {
+    transform: translate(-75%, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 

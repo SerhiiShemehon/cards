@@ -28,8 +28,11 @@ body{
 .container{
   width: 100%;
   max-width: 1300px;
-  padding: 0 70px;
+  padding: 0 15px;
   margin: 0 auto;
+  @media (min-width: 1024px){
+    padding: 0 70px;
+  }
 }
 
 .btn-mixing{
@@ -63,4 +66,6 @@ body{
   color: #b4901d;
   font-size: 30px;
   margin: 0;
+  width: calc(100% - 20px);
+  padding-right: 80px;
 }
