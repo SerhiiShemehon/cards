@@ -12,28 +12,47 @@ const randomInteger = (min, max) => {
 export const Card = ({
                          flipped,
                          numbers,
-                         setNumbers
+                         setNumbers,
+                         url
 }) => {
     const [cardClass, setCardClass] = useState(null);
     const [currentCard, setCurrentCard] = useState(null);
     const [isModal, setModal] = useState(false);
+    const [number, setNumber] = useState(0);
+    let imageUrl = url;
+
+    useEffect(()=>{
+        if(url === 'general'){
+            setNumber(144);
+        } else if(url === 'inner_child'){
+            setNumber(65);
+        } else if(url === 'looking_for_meaning'){
+            setNumber(148);
+        } else if(url === 'persons'){
+            setNumber(73);
+        } else if(url === 'resources'){
+            setNumber(80);
+        } else if(url === 'women_energy'){
+            setNumber(85);
+        }
+    }, [url])
 
     const handleClickCard = () => {
         if(!currentCard){
-            if (numbers.length < 106){
+            if (numbers.length < number){
                 const isNumber = (number) => {
                     if (numbers.indexOf( number ) != -1){
-                        return isNumber(randomInteger(1, 106));
+                        return isNumber(randomInteger(1, number));
                     } else {
                         return number;
                     }
                 }
-                const number = isNumber(randomInteger(1, 106));
+                const currentNumber = isNumber(randomInteger(1, number));
                 setNumbers(()=>[
                     ...numbers,
-                    number
+                    currentNumber
                 ]);
-                setCurrentCard(require('images/cards/'+ number +'.jpg').default);
+                setCurrentCard(require('images/cards/'+ imageUrl +'/'+ currentNumber +'.jpg').default);
                 setCardClass('is-flipped');
             } else {
                 window.location.reload();
