@@ -5,7 +5,6 @@ import  './Modal.scss';
 export const Modal = ({closeModal, currentCard}) => {
 
     const closeModalCurrent = (e) => {
-        console.log(1)
         if(e.target === e.currentTarget){
             closeModal();
         }
