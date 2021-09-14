@@ -15,7 +15,7 @@ export const CardList = () => {
 
     useEffect(()=>{
         if(url !== 'general' || url !== 'inner_child' || url !== 'looking_for_meaning' || url !== 'persons' || url !== 'resources' || url !== 'women_energy'){
-            <Redirect to="/" />
+            <Redirect to="/cards" />
         }
     }, [url])
 

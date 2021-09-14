@@ -15,7 +15,7 @@ export const App = () => {
         <div className="page-holder">
             <div className="wrapper">
                 <div className="container">
-                    <Link to="/" className="by-text">BY MARIANA VECHIRKO</Link>
+                    <Link to="/cards" className="by-text">BY MARIANA VECHIRKO</Link>
                     <Switch>
                         <Route path="/cards/:url" component={CardList} exact />
                         <Route path="*" component={DeckSelection} />
