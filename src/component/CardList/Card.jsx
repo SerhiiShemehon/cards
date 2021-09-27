@@ -18,7 +18,7 @@ export const Card = ({
     const [cardClass, setCardClass] = useState(null);
     const [currentCard, setCurrentCard] = useState(null);
     const [isModal, setModal] = useState(false);
-    const [number, setNumber] = useState(0);
+    const [number, setNumber] = useState(1);
     let imageUrl = url;
 
     useEffect(()=>{
@@ -34,6 +34,8 @@ export const Card = ({
             setNumber(80);
         } else if(url === 'women_energy'){
             setNumber(85);
+        } else if(url === 'personal_boundaries'){
+            setNumber(95);
         }
     }, [url])
 

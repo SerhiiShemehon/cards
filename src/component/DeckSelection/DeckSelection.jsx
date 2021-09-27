@@ -34,6 +34,11 @@ const menu = [
         link: '/cards/women_energy',
         title: 'Женская энергия'
     },
+    {
+        id: 7,
+        link: '/cards/personal_boundaries',
+        title: 'Личные границы'
+    }
 ]
 
 
