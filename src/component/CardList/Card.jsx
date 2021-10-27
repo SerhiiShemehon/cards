@@ -36,6 +36,8 @@ export const Card = ({
             setNumber(85);
         } else if(url === 'personal_boundaries'){
             setNumber(95);
+        } else if(url === 'man_resources'){
+            setNumber(68);
         }
     }, [url])
 

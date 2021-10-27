@@ -38,6 +38,11 @@ const menu = [
         id: 7,
         link: '/cards/personal_boundaries',
         title: 'Личные границы'
+    },
+    {
+        id: 8,
+        link: '/cards/man_resources',
+        title: 'Мужские ресурсы'
     }
 ]
 
