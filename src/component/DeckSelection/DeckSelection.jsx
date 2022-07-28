@@ -7,42 +7,42 @@ const menu = [
     {
         id: 1,
         link: '/cards/general',
-        title: 'Универсальная'
+        title: 'Universal'
     },
     {
         id: 2,
         link: '/cards/inner_child',
-        title: 'Внутренний ребенок'
+        title: 'Inner child'
     },
     {
         id: 3,
         link: '/cards/looking_for_meaning',
-        title: 'В поисках смысла'
+        title: 'Looking for sense'
     },
     {
         id: 4,
         link: '/cards/persons',
-        title: 'Персоны'
+        title: 'Persons'
     },
     {
         id: 5,
         link: '/cards/resources',
-        title: 'Ресурсы'
+        title: 'Resources'
     },
     {
         id: 6,
         link: '/cards/women_energy',
-        title: 'Женская энергия'
+        title: 'Women energy'
     },
     {
         id: 7,
         link: '/cards/personal_boundaries',
-        title: 'Личные границы'
+        title: 'Personal boundaries'
     },
     {
         id: 8,
         link: '/cards/man_resources',
-        title: 'Мужские ресурсы'
+        title: 'Man resources'
     }
 ]
 
